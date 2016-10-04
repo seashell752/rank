@@ -19,11 +19,11 @@ class App(object):
 
     @property
     def summary(self):
-    	return self.summary
+    	return self._summary
 
     @summary.setter
     def summary(self, value):
-    	self.summary = value
+    	self._summary = value
 
     @property
     def link(self):
@@ -39,7 +39,7 @@ class App(object):
     	return self._bundleId
 
     @bundleId.setter
-    def image(self, value):
+    def bundleId(self, value):
     	self._bundleId = value
 
 
@@ -57,7 +57,7 @@ class App(object):
     	return self._releaseDate
 
     @releaseDate.setter
-    def image(self, value):
+    def releaseDate(self, value):
     	self._releaseDate = value
 
 
@@ -68,21 +68,3 @@ class App(object):
     @rank.setter
     def rank(self, value):
     	self._rank = value
-
-
-    @property
-    def image(self):
-    	return self._image
-
-    @image.setter
-    def image(self, value):
-    	self._image = value
-
-
-    @property
-    def image(self):
-    	return self._image
-
-    @image.setter
-    def image(self, value):
-    	self._image = value
